@@ -79,7 +79,6 @@ class Converter(object):
         reduced_freqs = {}
         for freq in freqs:
             for key, val in self.notes.items():
-                key = key - 7
                 # Find the freq's equivalence class, adding the amplitudes.
                 if val[0] <= freq[0] <= val[2]:
                     if key in reduced_freqs.keys():
